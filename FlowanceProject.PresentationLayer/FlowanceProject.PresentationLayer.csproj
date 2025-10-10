@@ -21,4 +21,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FlowanceProject.BusinessLayer\FlowanceProject.BusinessLayer.csproj" />
+    <ProjectReference Include="..\FlowanceProject.DataAccessLayer\FlowanceProject.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\FlowanceProject.EntityLayer\FlowanceProject.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
