@@ -7,9 +7,9 @@ using FlowanceProject.EntityLayer.Concrete;
 
 namespace FlowanceProject.DataAccessLayer.Abstract
 {
-    public interface ICustomerAccountDal:IGenericDal<CustomerAccount>
+    public interface ICustomerAccountDal : IGenericDal<CustomerAccount>
     {
-
-
+        CustomerAccount GetByID(int id);
+        List<CustomerAccount> GetList();
     }
 }

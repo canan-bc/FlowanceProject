@@ -11,8 +11,8 @@ namespace FlowanceProject.DataAccessLayer.Abstract
         void Insert(T t);
         void Delete(T t);
         void Update(T t);
-        T GetByID(int id);
-        List<T> GetList();
+        T TGetByID(int id);
+        List<T> TetList();
 
 
     }
