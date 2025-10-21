@@ -25,13 +25,13 @@ namespace FlowanceProject.BusinessLayer.Concrete
 
         public CustomerAccount TGetByID(int id)
         {
-            return _customerAccountDal.GetByID(id);
+            return _customerAccountDal.TGetByID(id);
         }
 
         public List<CustomerAccount> TGetList()
         {
 
-            return _customerAccountDal.GetList();
+            return _customerAccountDal.TetList();
         }
 
         public void TInsert(CustomerAccount t)
@@ -43,7 +43,7 @@ namespace FlowanceProject.BusinessLayer.Concrete
         public void TUpdate(CustomerAccount t)
         {
 
-             _customerAccountDal.Update();
+             _customerAccountDal.Update(t);
         }
     }
 }

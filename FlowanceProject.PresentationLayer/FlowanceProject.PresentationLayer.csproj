@@ -4,6 +4,10 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <BootstrapVersion>5</BootstrapVersion>
+    <UseBootstrap5>true</UseBootstrap5>
+    <Scaffolding_UseBootstrap5>true</Scaffolding_UseBootstrap5>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
 
   <ItemGroup>
@@ -200,12 +204,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FlowanceProject.BusinessLayer\FlowanceProject.BusinessLayer.csproj" />
     <ProjectReference Include="..\FlowanceProject.DataAccessLayer\FlowanceProject.DataAccessLayer.csproj" />
     <ProjectReference Include="..\FlowanceProject.EntityLayer\FlowanceProject.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Register\" />
   </ItemGroup>
 
 </Project>

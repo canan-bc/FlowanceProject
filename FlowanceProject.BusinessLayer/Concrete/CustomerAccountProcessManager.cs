@@ -24,12 +24,12 @@ namespace FlowanceProject.BusinessLayer.Concrete
 
         public CustomerAccountProcess TGetByID(int id)
         {
-            return _customerAccountProcessDal.GetByID(id);
+            return _customerAccountProcessDal.TGetByID(id);
         }
 
         public List<CustomerAccountProcess> TGetList()
         {
-            return _customerAccountProcessDal.GetList();
+            return _customerAccountProcessDal.TetList();
         }
 
         public void TInsert(CustomerAccountProcess t)

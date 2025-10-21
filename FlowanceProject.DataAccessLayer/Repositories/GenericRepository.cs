@@ -17,14 +17,14 @@ namespace FlowanceProject.DataAccessLayer.Repositories
             context.SaveChanges();
         }
 
-        public T GetByID(int id)
+        public T TGetByID(int id)
         {
             using var context = new Context();
             return context.Set<T>().Find(id);
 
         }
 
-        public List<T> GetList()
+        public List<T> TetList()
         {
             using var context = new Context();
             return context.Set<T>().ToList();
