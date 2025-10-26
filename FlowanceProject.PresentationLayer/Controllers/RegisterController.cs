@@ -40,13 +40,13 @@ namespace FlowanceProject.PresentationLayer.Controllers
                 {
                     return RedirectToAction("Index", "ConfirmMail");
                 }
-                else
-                {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                }
+                //else
+                //{
+                //    foreach (var error in result.Errors)
+                //    {
+                //        ModelState.AddModelError("", error.Description);
+                //    }
+                //}
             }
             return View();
         }
@@ -55,6 +55,9 @@ namespace FlowanceProject.PresentationLayer.Controllers
 'The specified bootstrap version '3' is not valid. The valid options are '4, 5'.' 
         
         hatası alıyorum
+        
+       NOT! bootstrap 5 e  göre ayarladığım zamanda olmadı
+        
         */
         
         

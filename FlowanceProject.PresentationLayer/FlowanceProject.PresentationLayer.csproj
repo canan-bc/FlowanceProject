@@ -213,8 +213,4 @@
     <ProjectReference Include="..\FlowanceProject.EntityLayer\FlowanceProject.EntityLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Register\" />
-  </ItemGroup>
-
 </Project>
